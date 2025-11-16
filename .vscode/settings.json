@@ -1,0 +1,12 @@
+{
+    "github.copilot.enable": {
+        "rust": false
+    },
+    "editor.quickSuggestions": {
+        "other": false,
+        "comments": false,
+        "strings": false
+    },
+    "rust-analyzer.completion.autoimport.enable": false,
+    "rust-analyzer.completion.autoself.enable": false
+}
