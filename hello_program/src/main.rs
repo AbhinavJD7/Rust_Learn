@@ -137,8 +137,71 @@ fn calculate_length3(n:String)->usize{ //s will be the new owner
 
 //in borrow operation any mutable operation cannot be performed using the referenced value which can hinder the orginal value
 
-  
+ //Referencing and Dereferencing 
 
+ let x:u8 = 5;
+ let y  = &x; // y is the reference to the value of x, value of x is 5
+ println!("The value of x is {}",y); //auto derefencing (*y)
+ println!("The address of x is {:p}",&x);
+ println!("The address of x is {:p}",y);    
+
+ //example #2
+
+ let mut x = 5;
+ x = x+1;
+ let y = &mut x;
+
+ //dangling reference
+
+ //Programming concepts
+
+ // Scalar types
+ //f32 , f64 - float 
+ let f:f32 = 3.14;
+ let f2 = 534.232;
+
+ //boolean
+ let var:bool = true;
+
+ //
+ //character type
+
+ // Compound types
+
+ // Array
+    let arr1:[u8;5]; // array of integer8 and length 5
+    let arr:[&str;3] = ["hello" , "world" , "coders"];
+    write_arr(arr); // array directly pass
+    println!("arr={:?}" , arr);
+
+    fn write_arr(mut arr1 : [&str;3]){ // arr1 is the new copy of arr
+        arr1[0] = "Fellow";
+        println!("arr1={:?}" , arr1);
+    }
+
+    // the above is an expensive method as there we had to copy the whi
+ 
+    //Vector - Dyanmic Array
+
+    let mut v:Vec<i32> = Vec::new();
+    v.push(1);
+    v.push(2);
+    v.push(3);
+    println!("Vector v ={:?}" , v);
+
+    let mut v1 = vec![1,2,3,4,5];
+    v1.push(10);
+    v1.pop();
+    println!("vector v = {:?}" , v1)
+
+    // type inference
+
+    //shadowing 
+    
+    let t =  
+
+
+    
 }
 
 
