@@ -30,9 +30,9 @@ fn play_game(){
     let (row,col)=get_player_move(current_player, &board);
     board[row
     current_player = if current_player==PLAYER_X{
-        PLAYER_O
+        PLAYER_O;
     } else {
-        PLAYER_X
+        PLAYER_X;
     }
   } 
 }
