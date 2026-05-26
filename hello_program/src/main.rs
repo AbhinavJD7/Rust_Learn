@@ -197,12 +197,8 @@ fn calculate_length3(n:String)->usize{ //s will be the new owner
     // type inference
 
     //shadowing 
-    
-    let t =  
-
-
-    
 }
+    
 
 
 
