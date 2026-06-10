@@ -1,0 +1,3 @@
+[workspace]
+resolver = "3"
+members = ["commons","todo_app", "todo_app_frontend", "todo_app_mobile_app"]

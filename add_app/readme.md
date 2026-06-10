@@ -1,0 +1,1 @@
+This is just an example repo to understand cargo workspaces
